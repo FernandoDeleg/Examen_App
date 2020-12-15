@@ -1,16 +1,18 @@
 package ec.ups.edu.appdis.g1.ExamenDelegFernandoServidor.modelo;
 
-public class Vehiculo {
-	private int id;
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Vehiculo implements Serializable{
+	@Id
 	private String placa;
 	private String marca;
 	private String modelo;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
+	
 	public String getPlaca() {
 		return placa;
 	}
